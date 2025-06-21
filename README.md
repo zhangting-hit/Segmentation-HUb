@@ -2,7 +2,7 @@
  * @Author: zhangting
  * @Date: 2025-06-21 21:25:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-06-21 22:15:50
+ * @LastEditTime: 2025-06-21 22:20:34
  * @FilePath: /zhangting/Segmentation-Hub/README.md
 -->
 # Segmentation-Hub
@@ -11,7 +11,7 @@
 ## 自然图像领域
 ### 图像分割
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | FCN | Fully Convolutional Networks for Semantic Segmentation | [paper](https://arxiv.org/abs/1411.4038) | [code](https://github.com/shelhamer/fcn.berkeleyvision.org) | CVPR | 全监督 | 2015 |
 | U-Net | U-Net: Convolutional Networks for Biomedical Image Segmentation | [paper](https://arxiv.org/abs/1505.04597) | [code](https://github.com/milesial/Pytorch-UNet) | MICCAI | 全监督 | 2015 |
 | SegNet | SegNet: A Deep Convolutional Encoder-Decoder Architecture | [paper](https://arxiv.org/abs/1511.00561) | [code](https://github.com/alexgkendall/SegNet-Tutorial) | arXiv | 全监督 | 2015 |
@@ -27,7 +27,7 @@
 
 ### 视频序列分割
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | OSVOS | One-Shot Video Object Segmentation | [paper](https://arxiv.org/abs/1611.05162) | [code](https://github.com/scaelles/OSVOS) | CVPR | 半监督（首帧标注） | 2017 |
 | MaskTrack R-CNN | Learning Video Object Segmentation from Static Images | [paper](https://arxiv.org/abs/1905.04804) | [code](https://github.com/facebookresearch/MaskTrackRCNN) | CVPR | 全监督 | 2017 |
 | STM | Learning Memory Networks for Video Object Segmentation | [paper](https://arxiv.org/abs/1906.01698) | [code](https://github.com/seoungwugoh/STM) | ICCV | 半监督 | 2019 |
@@ -41,7 +41,7 @@
 
 ### 数据集
 | 数据集名称 | 下载链接 | 简介 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | PASCAL VOC | [PASCAL VOC官网](http://host.robots.ox.ac.uk/pascal/VOC/) | 经典的通用物体识别与分割数据集，包含20个类别的语义分割标签。 |
 | MS COCO | [MS COCO官网](https://cocodataset.org/#download) | 大规模图像识别、检测与分割数据集，含丰富的实例分割标签。 |
 | Cityscapes | [Cityscapes官网](https://www.cityscapes-dataset.com/downloads/) | 城市街景语义分割数据集，专注自动驾驶场景中的道路与物体分割。 |
@@ -59,7 +59,7 @@
 ## 医学领域
 ### 图像分割(Image Segmentation)
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | U-Net | U-Net: Convolutional Networks for Biomedical Image Segmentation | [paper](https://arxiv.org/abs/1505.04597) | [code](https://github.com/milesial/Pytorch-UNet) | MICCAI | 全监督 | 2015 |
 | V-Net | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [paper](https://arxiv.org/abs/1606.04797) | [code](https://github.com/faustomilletari/VNet) | 3DV | 全监督 | 2016 |
 | Attention U-Net | Attention U-Net: Learning Where to Look for the Pancreas | [paper](https://arxiv.org/abs/1804.03999) | [code](https://github.com/ozan-oktay/Attention-Gated-Networks) | MICCAI | 全监督 | 2018 |
@@ -73,7 +73,7 @@
 
 ### 视频序列分割
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | DCAN | Deep Contour-Aware Networks for Accurate Gland Segmentation | [paper](https://arxiv.org/abs/1612.01626) | [code](https://github.com/jamesjcai/DCAN) | CVPR | 全监督 | 2016 |
 | RNN-SegNet | A Recurrent Network for Video Segmentation | [paper](https://arxiv.org/abs/1702.02696) | [code](https://github.com/gurkirt/recurrent-video-segmentation) | CVPR | 全监督 | 2017 |
 | TS-UNet | Time-Series UNet for Medical Video Segmentation | [paper](https://ieeexplore.ieee.org/document/9083935) | [code](https://github.com/yzhao062/TS-UNet) | TMI | 全监督 | 2020 |
@@ -88,7 +88,7 @@
 
 ### 数据集(Dataset)
 | 数据集名称 | 下载链接 | 简介 |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | BraTS (Brain Tumor Segmentation) | [BraTS官网](https://www.med.upenn.edu/cbica/brats2021/data.html) | 脑肿瘤MRI多模态分割，包含多种肿瘤子区域标注。 |
 | ISIC (International Skin Imaging Collaboration) | [ISIC挑战赛](https://challenge.isic-archive.com/data/) | 皮肤病变（痣、黑色素瘤）图像及病灶分割数据。 |
 | LUNA16 (LUng Nodule Analysis 2016) | [LUNA16官网](https://luna16.grand-challenge.org/) | 肺部结节CT扫描数据，主要用于肺结节检测和分割。 |
@@ -99,8 +99,6 @@
 | CHAOS (Combined Healthy Abdominal Organ Segmentation) | [CHAOS Challenge](https://chaos.grand-challenge.org/) | 腹部多模态MRI和CT多器官分割数据。 |
 | DRIVE (Digital Retinal Images for Vessel Extraction) | [DRIVE Dataset](https://drive.grand-challenge.org/) | 视网膜血管分割数据集，常用于眼科图像分析。 |
 | AMOS (Abdominal Multi-Organ Segmentation) | [AMOS Challenge](https://amos22.grand-challenge.org/) | 包含多种腹部器官的CT图像和分割标签，适合多器官分割研究。 |
-
-
 
 
 
