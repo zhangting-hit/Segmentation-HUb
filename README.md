@@ -2,7 +2,7 @@
  * @Author: zhangting
  * @Date: 2025-06-21 21:25:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-06-21 22:20:34
+ * @LastEditTime: 2025-06-22 09:39:39
  * @FilePath: /zhangting/Segmentation-Hub/README.md
 -->
 # Segmentation-Hub
@@ -27,14 +27,15 @@
 
 ### 视频序列分割
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| OSVOS | One-Shot Video Object Segmentation | [paper](https://arxiv.org/abs/1611.05162) | [code](https://github.com/scaelles/OSVOS) | CVPR | 半监督（首帧标注） | 2017 |
-| MaskTrack R-CNN | Learning Video Object Segmentation from Static Images | [paper](https://arxiv.org/abs/1905.04804) | [code](https://github.com/facebookresearch/MaskTrackRCNN) | CVPR | 全监督 | 2017 |
-| STM | Learning Memory Networks for Video Object Segmentation | [paper](https://arxiv.org/abs/1906.01698) | [code](https://github.com/seoungwugoh/STM) | ICCV | 半监督 | 2019 |
-| AOT | Associating Objects with Transformers for Video Object Segmentation | [paper](https://arxiv.org/abs/2106.02638) | [code](https://github.com/google-research/scenic) | NeurIPS | 半监督 | 2021 |
-| STEm-Seg | STEm-Seg: Spatio-Temporal Embeddings for Instance Segmentation in Videos | [paper](https://arxiv.org/abs/2101.08833) | [code](https://github.com/dvl-tum/STEm-Seg) | CVPR | 半监督 | 2021 |
-| ReferFormer | ReferFormer: Referring Video Object Segmentation with Transformers | [paper](https://arxiv.org/abs/2201.00487) | [code](https://github.com/wjn922/ReferFormer) | ECCV | 多模态监督（语言+掩码） | 2022 |
-| XMem | Long-Term Video Object Segmentation with Memory Networks | [paper](https://arxiv.org/abs/2210.11006) | [code](https://github.com/hkchengrex/XMem) | ECCV | 半监督 | 2022 |
+| :---: | --- | :---: | :---: | :---: | :---: | :---: |
+| OSVOS | One-Shot Video Object Segmentation | [paper](https://arxiv.org/abs/1611.05198) | [code](https://github.com/kmaninis/OSVOS-PyTorch) | CVPR | 半监督（首帧标注） | 2017 |
+| MaskTrack R-CNN | <font style="color:rgb(0, 0, 0);">Video Instance Segmentation</font> | [paper](https://arxiv.org/abs/1905.04804) |  | ICCV | 全监督 | 2019 |
+| STM | <font style="color:rgb(31, 35, 40);">Video Object Segmentation using Space-Time Memory Networks</font> | [paper](https://openaccess.thecvf.com/content_ICCV_2019/papers/Oh_Video_Object_Segmentation_Using_Space-Time_Memory_Networks_ICCV_2019_paper.pdf) | [code](https://github.com/seoungwugoh/STM) | ICCV | 半监督 | 2019 |
+| AOT | Associating Objects with Transformers for Video Object Segmentation | [paper](https://arxiv.org/abs/2106.02638) | [code](https://github.com/yoxu515/aot-benchmark) | NeurIPS | 半监督 | 2021 |
+| STEm-Seg | STEm-Seg: Spatio-Temporal Embeddings for Instance Segmentation in Videos | [paper](https://arxiv.org/abs/2003.08429) | [code](https://github.com/sabarim/STEm-Seg) | ECCV | 全监督 | 2020 |
+| SSTVOS | <font style="color:rgb(0, 0, 0);">SSTVOS: Sparse Spatiotemporal Transformers for Video Object Segmentation</font> | [paper](https://arxiv.org/abs/2101.08833) | [code](https://github.com/dukebw/SSTVOS) | CVPR | 半监督 | 2021 |
+| ReferFormer |  Language as Queries for Referring Video Object Segmentation   | [paper](https://arxiv.org/abs/2201.00487) | [code](https://github.com/wjn922/ReferFormer) | ECCV | 多模态监督（语言+掩码） | 2022 |
+| XMem | Long-Term Video Object Segmentation with Memory Networks | [paper](https://arxiv.org/abs/2207.07115) | [code](https://github.com/hkchengrex/XMem) | ECCV | 半监督 | 2022 |
 
 
 
@@ -62,26 +63,24 @@
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | U-Net | U-Net: Convolutional Networks for Biomedical Image Segmentation | [paper](https://arxiv.org/abs/1505.04597) | [code](https://github.com/milesial/Pytorch-UNet) | MICCAI | 全监督 | 2015 |
 | V-Net | V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation | [paper](https://arxiv.org/abs/1606.04797) | [code](https://github.com/faustomilletari/VNet) | 3DV | 全监督 | 2016 |
-| Attention U-Net | Attention U-Net: Learning Where to Look for the Pancreas | [paper](https://arxiv.org/abs/1804.03999) | [code](https://github.com/ozan-oktay/Attention-Gated-Networks) | MICCAI | 全监督 | 2018 |
-| nnU-Net | nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation | [paper](https://arxiv.org/abs/1809.10486) | [code](https://github.com/MIC-DKFZ/nnunet) | MICCAI | 全监督 | 2019 |
-| TransUNet | TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation | [paper](https://arxiv.org/abs/2102.04306) | [code](https://github.com/Beckschen/TransUNet) | MICCAI | 全监督 | 2021 |
-| UNETR | UNETR: Transformers for 3D Medical Image Segmentation | [paper](https://arxiv.org/abs/2103.10504) | [code](https://github.com/Project-MONAI/research-contributions/tree/main/UNETR) | MICCAI | 全监督 | 2021 |
-| TransUnet | TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation | [<font style="color:rgb(9, 105, 218);">paper</font>](https://arxiv.org/pdf/2102.04306.pdf) | [code](https://github.com/Beckschen/TransUNet) | CVPR | 全监督 | 2021 |
-| Swin-Unet | Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation | [paper](https://arxiv.org/abs/2105.05537) | [code](https://github.com/HuCaoFighting/Swin-Unet) | arXiv | 全监督 | 2022 |
+| Attention U-Net | Attention U-Net: Learning Where to Look for the Pancreas | [paper](https://arxiv.org/abs/1804.03999) | [code](https://github.com/hudyweas/brain-tumor-segmenator) | <font style="color:rgb(0, 0, 0);">MIDL</font> | 全监督 | 2018 |
+| nnU-Net | nnU-Net: Self-adapting Framework for U-Net-Based Medical Image Segmentation | [paper](https://arxiv.org/abs/1809.10486) | [code](https://github.com/MIC-DKFZ/nnUNet) | MICCAI | 全监督 | 2019 |
+| TransUNet | TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation | [paper](https://arxiv.org/abs/2102.04306) | [code](https://github.com/Beckschen/TransUNet) | MIA | 全监督 | 2021 |
+| UNETR | UNETR: Transformers for 3D Medical Image Segmentation | [paper](https://arxiv.org/abs/2103.10504) | [code](https://github.com/Project-MONAI/research-contributions/tree/main/UNETR) | <font style="color:rgb(0, 0, 0);">WACV</font> | 全监督 | 2022 |
+| Swin-Unet | Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation | [paper](https://arxiv.org/abs/2105.05537) | [code](https://github.com/HuCaoFighting/Swin-Unet) | <font style="color:rgb(31, 35, 40);">ECCV</font> | 全监督 | 2022 |
 | UNeXt | **<font style="color:rgb(31, 35, 40);">UNeXt</font>**<font style="color:rgb(31, 35, 40);">: MLP-based Rapid Medical Image Segmentation Network</font> | [paper](https://arxiv.org/pdf/2203.04967) | [code](https://github.com/jeya-maria-jose/UNeXt-pytorch) | <font style="color:rgb(0, 0, 0);">MICCAI</font> | 全监督 | 2022 |
 
 
 ### 视频序列分割
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| DCAN | Deep Contour-Aware Networks for Accurate Gland Segmentation | [paper](https://arxiv.org/abs/1612.01626) | [code](https://github.com/jamesjcai/DCAN) | CVPR | 全监督 | 2016 |
-| RNN-SegNet | A Recurrent Network for Video Segmentation | [paper](https://arxiv.org/abs/1702.02696) | [code](https://github.com/gurkirt/recurrent-video-segmentation) | CVPR | 全监督 | 2017 |
-| TS-UNet | Time-Series UNet for Medical Video Segmentation | [paper](https://ieeexplore.ieee.org/document/9083935) | [code](https://github.com/yzhao062/TS-UNet) | TMI | 全监督 | 2020 |
-| FLA-Net | FLA-Net: Frame-Level Attention for Medical Video Segmentation | [paper](https://arxiv.org/abs/2107.11586) | [code](https://github.com/Flanet/FLA-Net) | arXiv | 全监督 | 2021 |
-| ViViT-Seg | ViViT-Seg: Video Vision Transformer for Medical Video Segmentation | [paper](https://arxiv.org/abs/2106.15241) | [code](https://github.com/lab-medical/vivit-seg) | MICCAI | 全监督 | 2021 |
-| PNSNet | Progressive Nested Spatiotemporal Network for Medical Video Segmentation | [paper](https://arxiv.org/abs/2208.09622) | [code](https://github.com/xyzabc/PNSNet) | MICCAI | 全监督 | 2022 |
-| LGRNet | LGRNet: Local-Global Recurrent Network for Medical Video Segmentation | [paper](https://arxiv.org/abs/2301.12345) | [code](https://github.com/xyzabc/LGRNet) | TMI | 全监督 | 2023 |
-| MED-VT++ | MED-VT++: Multimodal Encoder-Decoder Transformer for Medical Video Segmentation | [paper](https://arxiv.org/abs/2401.01234) | [code](https://github.com/xyzabc/MED-VT++) | MICCAI | 全监督 | 2024 |
+| DCAN | Deep Contour-Aware Networks for Accurate Gland Segmentation | [paper](https://openaccess.thecvf.com/content_cvpr_2016/papers/Chen_DCAN_Deep_Contour-Aware_CVPR_2016_paper.pdf) |  | CVPR | 全监督 | 2016 |
+|  RVOS   |  RVOS: End-to-End Recurrent Network for Video Object Segmentation   | [paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Ventura_RVOS_End-To-End_Recurrent_Network_for_Video_Object_Segmentation_CVPR_2019_paper.pdf) | [code](https://github.com/imatge-upc/rvos) | CVPR | 全监督 | 2019 |
+| ViViT-Seg | ViViT-Seg: Video Vision Transformer for Medical Video Segmentation | [paper](https://arxiv.org/pdf/2103.15691) | [code](https://github.com/google-research/scenic/tree/main/scenic/projects/vivit) | ICCV | 全监督 | 2021 |
+| PNSNet | <font style="color:rgb(0, 0, 0);">Progressively Normalized Self-Attention Network for Video Polyp Segmentation</font> | [paper](https://arxiv.org/abs/2105.08468) | [code](https://github.com/GewelsJI/PNS-Net) | MICCAI | 全监督 | 2021 |
+| FLA-Net | <font style="color:rgb(0, 0, 0);">Shifting More Attention to Breast Lesion Segmentation in Ultrasound Videos</font> | [paper](https://arxiv.org/abs/2310.01861) | [code](https://github.com/jhl-Det/FLA-Net) | AAAI | 全监督 | 2022 |
+| LGRNet | <font style="color:rgb(0, 0, 0);">HilbertMamba: Local-Global Reciprocal Network for Uterine Fibroid Segmentation in Ultrasound Videos</font> | [paper](https://arxiv.org/abs/2407.05703) | [code](https://github.com/bio-mlhui/LGRNet) | MICCAI | 全监督 | 2024 |
+| MED-VT++ | <font style="color:rgb(0, 0, 0);">MED-VT++: Unifying Multimodal Learning with a Multiscale Encoder-Decoder Video Transformer</font> | [paper](https://arxiv.org/abs/2304.05930) | [code](https://github.com/rkyuca/medvt) | CVPR | 全监督 | 2024 |
 
 
 
@@ -89,7 +88,7 @@
 ### 数据集(Dataset)
 | 数据集名称 | 下载链接 | 简介 |
 | :---: | :---: | :---: |
-| BraTS (Brain Tumor Segmentation) | [BraTS官网](https://www.med.upenn.edu/cbica/brats2021/data.html) | 脑肿瘤MRI多模态分割，包含多种肿瘤子区域标注。 |
+| BraTS (Brain Tumor Segmentation) | [BraTS官网](https://www.synapse.org/Synapse:syn27046444/wiki/616571) | 脑肿瘤MRI多模态分割，包含多种肿瘤子区域标注。 |
 | ISIC (International Skin Imaging Collaboration) | [ISIC挑战赛](https://challenge.isic-archive.com/data/) | 皮肤病变（痣、黑色素瘤）图像及病灶分割数据。 |
 | LUNA16 (LUng Nodule Analysis 2016) | [LUNA16官网](https://luna16.grand-challenge.org/) | 肺部结节CT扫描数据，主要用于肺结节检测和分割。 |
 | KiTS (Kidney Tumor Segmentation) | [KiTS Challenge](https://kits19.grand-challenge.org/) | 肾脏肿瘤CT扫描数据，包含肾脏和肿瘤标签。 |
@@ -99,8 +98,3 @@
 | CHAOS (Combined Healthy Abdominal Organ Segmentation) | [CHAOS Challenge](https://chaos.grand-challenge.org/) | 腹部多模态MRI和CT多器官分割数据。 |
 | DRIVE (Digital Retinal Images for Vessel Extraction) | [DRIVE Dataset](https://drive.grand-challenge.org/) | 视网膜血管分割数据集，常用于眼科图像分析。 |
 | AMOS (Abdominal Multi-Organ Segmentation) | [AMOS Challenge](https://amos22.grand-challenge.org/) | 包含多种腹部器官的CT图像和分割标签，适合多器官分割研究。 |
-
-
-
-
-
