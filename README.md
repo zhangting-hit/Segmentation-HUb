@@ -2,14 +2,16 @@
  * @Author: zhangting
  * @Date: 2025-06-21 21:25:29
  * @LastEditors: Do not edit
- * @LastEditTime: 2025-06-22 09:39:39
+ * @LastEditTime: 2025-06-22 09:49:14
  * @FilePath: /zhangting/Segmentation-Hub/README.md
 -->
 # Segmentation-Hub
 本仓库旨在整理和汇总图像与视频序列分割（Image & Video Sequence Segmentation）相关的经典与前沿研究，包括论文、开源代码、项目链接及复现结果。重点关注时空信息建模、多模态融合、语义/实例分割、医学影像分割等方向，覆盖静态图像分割与动态图像序列分割两大领域。
 
-## 自然图像领域
-### 图像分割
+持续更新ing 🖥️
+
+## 🏞️自然图像领域(Natural)
+### 📷图像分割(Image Segmentation)
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | FCN | Fully Convolutional Networks for Semantic Segmentation | [paper](https://arxiv.org/abs/1411.4038) | [code](https://github.com/shelhamer/fcn.berkeleyvision.org) | CVPR | 全监督 | 2015 |
@@ -25,7 +27,7 @@
 
 
 
-### 视频序列分割
+### 📽️视频序列分割(Video Sequence Segmentation)
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
 | :---: | --- | :---: | :---: | :---: | :---: | :---: |
 | OSVOS | One-Shot Video Object Segmentation | [paper](https://arxiv.org/abs/1611.05198) | [code](https://github.com/kmaninis/OSVOS-PyTorch) | CVPR | 半监督（首帧标注） | 2017 |
@@ -40,7 +42,7 @@
 
 
 
-### 数据集
+### 🗂️数据集(Dataset)
 | 数据集名称 | 下载链接 | 简介 |
 | :---: | :---: | :---: |
 | PASCAL VOC | [PASCAL VOC官网](http://host.robots.ox.ac.uk/pascal/VOC/) | 经典的通用物体识别与分割数据集，包含20个类别的语义分割标签。 |
@@ -57,8 +59,8 @@
 
 
 
-## 医学领域
-### 图像分割(Image Segmentation)
+## 🧑‍⚕️医学领域(Medical)
+### 📷图像分割(Image Segmentation)
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | U-Net | U-Net: Convolutional Networks for Biomedical Image Segmentation | [paper](https://arxiv.org/abs/1505.04597) | [code](https://github.com/milesial/Pytorch-UNet) | MICCAI | 全监督 | 2015 |
@@ -71,7 +73,7 @@
 | UNeXt | **<font style="color:rgb(31, 35, 40);">UNeXt</font>**<font style="color:rgb(31, 35, 40);">: MLP-based Rapid Medical Image Segmentation Network</font> | [paper](https://arxiv.org/pdf/2203.04967) | [code](https://github.com/jeya-maria-jose/UNeXt-pytorch) | <font style="color:rgb(0, 0, 0);">MICCAI</font> | 全监督 | 2022 |
 
 
-### 视频序列分割
+### 📽️视频序列分割(Video Sequence Segmentation)
 | 方法 | 标题 | 论文链接 | 代码链接 | 发表位置 | 监督范式 | 发表年份 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | DCAN | Deep Contour-Aware Networks for Accurate Gland Segmentation | [paper](https://openaccess.thecvf.com/content_cvpr_2016/papers/Chen_DCAN_Deep_Contour-Aware_CVPR_2016_paper.pdf) |  | CVPR | 全监督 | 2016 |
@@ -85,7 +87,7 @@
 
 
 
-### 数据集(Dataset)
+### 🗂️数据集(Dataset)
 | 数据集名称 | 下载链接 | 简介 |
 | :---: | :---: | :---: |
 | BraTS (Brain Tumor Segmentation) | [BraTS官网](https://www.synapse.org/Synapse:syn27046444/wiki/616571) | 脑肿瘤MRI多模态分割，包含多种肿瘤子区域标注。 |
